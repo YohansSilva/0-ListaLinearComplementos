@@ -17,7 +17,10 @@ int posicaoElemento(int valor);
 const int MAX = 10;;
 int lista[MAX]{};
 int nElementos = 0;
-
+/// <summary>
+/// /cucucucucu
+/// </summary>
+/// <returns></returns>
 
 int main()
 {
