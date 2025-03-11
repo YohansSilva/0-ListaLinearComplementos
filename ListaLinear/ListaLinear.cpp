@@ -100,7 +100,7 @@ void inserirElemento()
 	int valor;
 	if (nElementos < MAX) {
 		cout << "Digite o elemento: ";
-		cin >> valor;
+		cin >> valor; //saber se o número já chegou no limite
 		pos = posicaoElemento(valor);
 
 		if (pos != -1)
@@ -122,7 +122,23 @@ void inserirElemento()
 
 void excluirElemento()
 {
+	int excluir;
+	cout << "Digite o elemento que queira excluir: ";
+	cin >> excluir; //saber se o número já ch
 
+	int posicao2 = posicaoElemento(excluir);
+	cout << posicao2;
+
+	if (posicao2 == -1)
+	{
+		cout << "numero n existe";
+	}
+	else {
+		for (int i = posicao2; i <= nElementos -1;i++) {
+			lista[i] = lista[i + 1];
+			nElementos = nElementos - 1;
+		}
+	}
 
 }
 
