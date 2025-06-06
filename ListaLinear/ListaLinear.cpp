@@ -1,7 +1,7 @@
 
 #include <iostream>
 using namespace std;
-
+// codigo quentinho bem tesudo
 // headers
 void menu();
 void inicializar();
@@ -103,12 +103,12 @@ void inserirElemento()
 	int valor;
 	if (nElementos < MAX) {
 		cout << "Digite o elemento: ";
-		cin >> valor; //saber se o número já chegou no limite
+		cin >> valor; //saber se o nï¿½mero jï¿½ chegou no limite
 		pos = posicaoElemento(valor);
 
 		if (pos != -1)
 		{
-			cout << "Elemento já esta na lista" << endl;
+			cout << "Elemento jï¿½ esta na lista" << endl;
 		}
 		else
 		{
@@ -127,7 +127,7 @@ void excluirElemento()
 {
 	int excluir;
 	cout << "Digite o elemento que queira excluir: ";
-	cin >> excluir; //saber se o número já ch
+	cin >> excluir; //saber se o nï¿½mero jï¿½ ch
 
 	int posicao2 = posicaoElemento(excluir);
 	cout << posicao2;
